@@ -1,7 +1,4 @@
-//package Recursion with MultiBranch;
-// explore
-
-public class MuliBranch {
+public class MultiBranch1 {
     static void tree(int num){
         if(num <=0){
             return;
@@ -11,14 +8,12 @@ public class MuliBranch {
         System.out.println("Between call "+num);
         tree(num-2);
         System.out.println("Post call "+num);
+        tree(num-3);
+        System.out.println("Post call (n-3) "+num);
+        tree(num-4);
+        System.out.println("Post call (n-4) "+num);
     }   
     public static void main(String[] args) {
-        tree(4);
+        tree(5);
     }
 }
-
-//Time complexity = 2^n.
-
-// jb tk niche ja rhe ho pre call
-// jb backtrack kroge to between call
-// fir jb niche aoge to post call
